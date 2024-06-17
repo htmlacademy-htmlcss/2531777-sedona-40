@@ -56,14 +56,22 @@ body {
   text-decoration: none;
 }
 
+.notification-badge {
+  background-image: url("../images/icons/twelve.svg");
+}
+
 .header-button {
   font-family: "PT Sans", sans-serif;
   line-height: 22px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   text-align: center;
-  background-color:  #fff;
+  background-color:  #756157;
   text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 160px;
+  height: 36px;
 }
 
 .main {
@@ -182,10 +190,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color:  #756157;
-  border-radius: 4px;
-  padding: 8px 30px;
-  width: 376px;
-  height: 52px;
+
 }
 
 .subscribe-form {
@@ -229,8 +234,9 @@ body {
 
 .inner-header {
   background-image: url("../images/backgraund/filter-background.jpg");
-  background-size: 100% auto;
+  background-size: 100%;
   background-repeat: no-repeat;
+
 }
 
 
@@ -240,7 +246,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #fff ;
-  text-transform: uppercase;
+
 }
 
 .breadcrumbs-link {
@@ -298,10 +304,7 @@ body {
   font-size: 16px;
   line-height:20px;
   color: #fff;
-  border-radius: 4px;
-  padding: 8px 50px;
-  width: 191px;
-  height: 36px;
+
   background-color: #82b3d3 ;
   text-transform: uppercase;
 }
@@ -312,10 +315,6 @@ body {
   font-size: 16px;
   line-height:20px;
   color: #fff;
-  border-radius: 4px;
-  padding: 8px 50px;
-  width: 191px;
-  height: 36px;
   background-color: transparent ;
   text-transform: uppercase;
 }
@@ -327,17 +326,18 @@ body {
   font-size: 30px;
   line-height:36px;
   color: #000;
+  text-transform: uppercase;
 }
 
 .select-control {
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height:21px;
   color: #000;
 }
 
-.product-card-title {
+.product-card-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
