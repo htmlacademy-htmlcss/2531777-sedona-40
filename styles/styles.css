@@ -345,3 +345,101 @@ body {
   color: #000;
   text-decoration: none;
 }
+
+.description-card {
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.product-card-price {
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.button-hotel {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height:20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 50px 8px, 50px;
+  width: 140px;
+  height: 36px;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+}
+
+.button-hotel-select {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height:20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 50px 8px, 50px;
+  width: 140px;
+  height: 36px;
+  background-color:  #7db54f;
+  text-transform: uppercase;
+}
+
+.product-card-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height:20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 50px ;
+  width: 140px;
+  height: 36px;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.rating {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height:20px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height:36px;
+  text-align: center;
+  color: #fff;
+  background-color: #82b3d3;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height:36px;
+  text-align: center;
+  color: #000;
+  background-color: #f2f2f2;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
