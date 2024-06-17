@@ -37,7 +37,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000 ;
+  color: #000;
   background-color: #fff;
 }
 
@@ -52,7 +52,7 @@ body {
   font-weight: 700;
   color: #000;
   text-align: center;
-  background-color:  #fff;
+  background-color: #fff;
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ body {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  background-color:  #756157;
+  background-color: #756157;
   text-decoration: none;
   border-radius: 4px;
   padding: 8px 50px;
@@ -75,13 +75,14 @@ body {
 }
 
 .main {
-  background-color: #fff ;
+  background-color: #fff;
   color: #000;
 }
 
-.welcome{
-  background-image: url("../images/hero/welcome-background.jpg");
-  background-size: 100% auto;
+.welcome {
+  background-color: #82b3d3;
+  background-image: url("../images/hero/welcome-background.jpg"), url("..images/hero/welcome-decor.svg");
+  background-size: cover, 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -91,7 +92,7 @@ body {
   font-weight: 400;
   color: #000;
   text-align: center;
-  background-color:  #fff;
+  background-color: #fff;
   text-decoration: none;
 }
 
@@ -102,7 +103,6 @@ body {
   font-size: 30px;
   color: #000;
   text-align: center;
-  background-color:  #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -114,7 +114,7 @@ body {
   font-size: 24px;
   color: #000;
   text-align: center;
-  background-color:  #fff;
+  background-color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -125,7 +125,7 @@ body {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  background-color:  #82b3d3;
+  background-color: #82b3d3;
 }
 
 .hero-description {
@@ -152,54 +152,58 @@ body {
   font-size: 22px;
   color: #000;
   text-align: center;
-  background-color:  #fff;
   text-decoration: none;
 }
 
 
-.square{
-  background-color:  #f0f6fa;
+.square {
+  background-color: #f0f6fa;
 }
 
 .road {
-  background-color:  #e6f0f6 ;
+  background-color: #e6f0f6;
 }
 
 .tourists {
-  background-color:  #f0f6fa;
+  background-color: #f0f6fa;
 }
 
 .bridge {
-  background-color:  #82b3d3;
+  background-color: #82b3d3;
 }
 
-.housing{
-  background-color:  #f0f6fa ;
+.housing {
+  background-color: #f0f6fa;
 }
 
 
 .souvenirs {
-  background-color:  #f0f6fa  ;
+  background-color: #f0f6fa;
 }
 
 .button-search {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  background-color:  #756157;
+  background-color: #756157;
 
+}
+
+.subscribe {
+  background-size: cover;
+  background-color: #fff;
 }
 
 .subscribe-form {
-  font-family: "PT Sans", sans-serif;
   line-height: 18px;
   font-weight: 400;
   color: #000;
-  text-align: left;
+  text-align: center;
+
 }
+
 .button-subscribe {
   font-family: inherit;
   background-color: #82b3d3;
@@ -209,12 +213,12 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000 ;
+  color: #000;
   background-color: #fff;
 }
 
 .page-footer a {
-  color: #000 ;
+  color: #000;
 }
 
 .footer-contacts-phone {
@@ -222,19 +226,19 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 24px;
-  color: #000 ;
+  color: #000;
   text-transform: uppercase;
   text-align: center;
   background-color: #fff;
 }
 
 .htmlacademy-link {
-  background-image: url("../images/footer-social/logo-academy.svg") ;
+  background-image: url("../images/footer-social/logo-academy.svg");
 }
 
-.inner-header {
+.parameters {
   background-image: url("../images/backgraund/filter-background.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
@@ -245,7 +249,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #fff ;
+  color: #fff;
 
 }
 
@@ -261,7 +265,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height:24px;
+  line-height: 24px;
   color: #fff;
 }
 
@@ -275,9 +279,9 @@ body {
 
 .radio-filter-group {
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
-  line-height:24px;
+  line-height: 24px;
   color: #fff;
 }
 
@@ -285,7 +289,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height:24px;
+  line-height: 24px;
   color: #fff;
 }
 
@@ -293,7 +297,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height:18px;
+  line-height: 18px;
   color: #e5e5e5;
 }
 
@@ -302,10 +306,10 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   color: #fff;
 
-  background-color: #82b3d3 ;
+  background-color: #82b3d3;
   text-transform: uppercase;
 }
 
@@ -313,18 +317,18 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   color: #fff;
-  background-color: transparent ;
+  background-color: transparent;
   text-transform: uppercase;
 }
 
 
-.catalog-title{
+.catalog-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height:36px;
+  line-height: 36px;
   color: #000;
   text-transform: uppercase;
 }
@@ -333,7 +337,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
   color: #000;
 }
 
@@ -341,7 +345,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   color: #000;
   text-decoration: none;
 }
@@ -366,7 +370,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   text-align: center;
   color: #fff;
   border-radius: 4px;
@@ -381,14 +385,14 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   text-align: center;
   color: #fff;
   border-radius: 4px;
   padding: 8px 50px 8px, 50px;
   width: 140px;
   height: 36px;
-  background-color:  #7db54f;
+  background-color: #7db54f;
   text-transform: uppercase;
 }
 
@@ -396,11 +400,11 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   text-align: center;
   color: #fff;
   border-radius: 4px;
-  padding: 8px 50px ;
+  padding: 8px 50px;
   width: 140px;
   height: 36px;
   background-color: #756157;
@@ -412,7 +416,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   text-align: center;
   color: #000;
   text-transform: uppercase;
@@ -422,7 +426,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height:36px;
+  line-height: 36px;
   text-align: center;
   color: #fff;
   background-color: #82b3d3;
@@ -435,7 +439,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height:36px;
+  line-height: 36px;
   text-align: center;
   color: #000;
   background-color: #f2f2f2;
