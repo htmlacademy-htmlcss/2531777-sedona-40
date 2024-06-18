@@ -68,10 +68,7 @@ body {
   text-align: center;
   background-color: #756157;
   text-decoration: none;
-  border-radius: 4px;
-  padding: 8px 50px;
-  width: 160px;
-  height: 36px;
+
 }
 
 .main {
@@ -81,13 +78,12 @@ body {
 
 .welcome {
   background-color: #82b3d3;
-  background-image: url("../images/hero/welcome-background.jpg"), url("..images/hero/welcome-decor.svg");
-  background-size: cover, 100% auto;
+  background-image: url("../images/hero/welcome-background.jpg") ;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero {
-  font-family: "PT Sans", sans-serif;
   line-height: 36px;
   font-weight: 400;
   color: #000;
@@ -97,7 +93,6 @@ body {
 }
 
 .title-main {
-  font-family: "PT Sans", sans-serif;
   line-height: 36px;
   font-weight: 700;
   font-size: 30px;
@@ -108,7 +103,6 @@ body {
 }
 
 .title {
-  font-family: "PT Sans", sans-serif;
   line-height: 28px;
   font-weight: 700;
   font-size: 24px;
@@ -120,8 +114,8 @@ body {
 }
 
 .city {
-  font-family: "PT Sans", sans-serif;
-  line-height: 24px;
+  line-height: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -129,8 +123,8 @@ body {
 }
 
 .hero-description {
-  font-family: "PT Sans", sans-serif;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -184,29 +178,44 @@ body {
 .button-search {
   font-weight: 700;
   font-size: 20px;
+  line-height: 36px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   background-color: #756157;
-
 }
 
 .subscribe {
+  background-image: url("../images/backgraund/catalog-search.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-color: #fff;
+  position: relative;
+}
+
+.subscribe-catalog {
+  background-size: cover;
+  background-color: #fff;
+
 }
 
 .subscribe-form {
-  line-height: 18px;
+  line-height: 36px;
+  font-size: 18px;
   font-weight: 400;
   color: #000;
   text-align: center;
-
 }
 
 .button-subscribe {
-  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
   background-color: #82b3d3;
+  text-transform: uppercase;
 }
 
 .page-footer {
@@ -227,7 +236,7 @@ body {
   font-size: 40px;
   line-height: 24px;
   color: #000;
-  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   background-color: #fff;
 }
@@ -239,8 +248,8 @@ body {
 .parameters {
   background-image: url("../images/backgraund/filter-background.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-
 }
 
 
@@ -308,7 +317,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-
   background-color: #82b3d3;
   text-transform: uppercase;
 }
@@ -373,10 +381,6 @@ body {
   line-height: 20px;
   text-align: center;
   color: #fff;
-  border-radius: 4px;
-  padding: 8px 50px 8px, 50px;
-  width: 140px;
-  height: 36px;
   background-color: #82b3d3;
   text-transform: uppercase;
 }
@@ -388,10 +392,6 @@ body {
   line-height: 20px;
   text-align: center;
   color: #fff;
-  border-radius: 4px;
-  padding: 8px 50px 8px, 50px;
-  width: 140px;
-  height: 36px;
   background-color: #7db54f;
   text-transform: uppercase;
 }
@@ -403,10 +403,6 @@ body {
   line-height: 20px;
   text-align: center;
   color: #fff;
-  border-radius: 4px;
-  padding: 8px 50px;
-  width: 140px;
-  height: 36px;
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
@@ -414,7 +410,7 @@ body {
 
 .rating {
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
