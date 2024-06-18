@@ -77,19 +77,11 @@ body {
 }
 
 .welcome {
-  background-color: #82b3d3;
-  background-image: url("../images/hero/welcome-background.jpg") ;
-  background-size: cover;
+  background-color: #7db54f;
+  background-image: url("../images/hero/welcome-decor.svg") , url("../images/hero/welcome-background.jpg") ;
+  background-size:100% auto,  cover;
+  background-position: bottom, center ;
   background-repeat: no-repeat;
-}
-
-.hero {
-  line-height: 36px;
-  font-weight: 400;
-  color: #000;
-  text-align: center;
-  background-color: #fff;
-  text-decoration: none;
 }
 
 .title-main {
@@ -131,7 +123,6 @@ body {
 }
 
 .description {
-  font-family: "PT Sans", sans-serif;
   line-height: 21px;
   font-size: 18px;
   font-weight: 400;
@@ -140,7 +131,6 @@ body {
 }
 
 .description-main {
-  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-weight: 400;
   font-size: 22px;
@@ -194,10 +184,38 @@ body {
   position: relative;
 }
 
+.title-subscribe {
+  line-height: 36px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.description-subscribe {
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.title-subscribe-catalog {
+  line-height: 36px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .subscribe-catalog {
   background-size: cover;
   background-color: #fff;
-
 }
 
 .subscribe-form {
@@ -219,7 +237,6 @@ body {
 }
 
 .page-footer {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000;
@@ -231,10 +248,9 @@ body {
 }
 
 .footer-contacts-phone {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
-  line-height: 24px;
+  line-height: 40px;
   color: #000;
   text-decoration: none;
   text-align: center;
@@ -254,12 +270,10 @@ body {
 
 
 .inner-header-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #fff;
-
 }
 
 .breadcrumbs-link {
@@ -304,10 +318,10 @@ body {
 
 .sieve {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 18px;
-  color: #e5e5e5;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
 }
 
 
