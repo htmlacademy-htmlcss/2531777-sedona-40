@@ -47,6 +47,7 @@
         <div class="page-container catalog-sedona">
           <div class="parameters">
             <header class="inner-header">
+
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
@@ -63,9 +64,9 @@
             <section class="catalog-hotels" data-test=" filter">
               <div class="filter-hotels">
 
-                <div class="infrastructure">
+
                   <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-                  <form action="https://echo.htmlacademy.ru/" metod="get">
+                  <form class="filters" action="https://echo.htmlacademy.ru/" metod="get">
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Инфраструктура</legend>
                       <ul class="control-list">
@@ -83,12 +84,10 @@
                         </li>
                       </ul>
                     </fieldset>
-                </div>
 
-                <div class="type-housing">
                   <fieldset class="radio-filter-group">
                     <legend class="title-radio">Тип жилья:</legend>
-                    <ul class="radio">
+                    <ul class="radio-list">
                       <li class="radio-list-item">
                         <label class="radio-input-title">
                           <input type="radio" name="housing-type" value="hotel" checked>Гостиница</label>
@@ -103,16 +102,16 @@
                       </li>
                     </ul>
                   </fieldset>
-                </div>
 
-                <div class="value">
-                  <fieldset>
-                    <legend class="price-title">Стоимость,<span>₽</span></legend>
-                    <label class="sieve">от<input type="text" value="0"></label>
-                    <label class="sieve">до<input type="text" value="9000"></label>
-                    <input type="range" name="" id="">
+                  <fieldset class="value">
+                    <legend class="value-title">Стоимость,<span>₽</span></legend>
+                    <div class="value-form">
+                    <label class="label-value-title"><input class="text" type="text" value="0"></label>
+                    <label class="label-value-title"><input class="text" type="text" value="9000"></label>
+                  </div>
+                    <input class="inputbox" type="range" name="" id="">
                   </fieldset>
-                </div>
+
 
                 <div class="button-wrapper">
                   <button class="button button-submit" type="submit">Применить</button>
@@ -146,6 +145,7 @@
               </a>
             </li>
           </ul>
+
         </section>
         <div class="product">
           <article class="product-card">
@@ -155,6 +155,7 @@
                 alt="Гостиница Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
+
             <div class="card-price">
               <p class="description-card">Гостиница</p>
               <p class="product-card-price">От 4000 ₽</p>
@@ -255,15 +256,17 @@
 
         </ul>
         </section>
-    </div>
+
     <section class="subscribe-catalog" data-test="subscribe">
       <h2 class="title-subscribe-catalog">Подпишитесь на рассылку</h2>
-      <p class="description-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="description-subscribe-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="form-label" for="subscribe-now"></label>
-        <input class="subscribe-form-text" type="text" id="subscribe-now" name="subscribe-now" placeholder="Ваш e-mail"
+        <input class="subscribe-form-text text-catalog" type="text" id="subscribe-now" name="subscribe-now" placeholder="Ваш e-mail"
           required>
-        <button class="button button-subscribe" type="submit">Подписаться</button>
+          <div class="button-subscribe" >
+            <button class="button-index" type="submit">Подписаться</button>
+          </div>
       </form>
     </section>
     </main>
@@ -295,6 +298,7 @@
       </div>
     </footer>
     </div>
+  </div>
   </body>
 
 </html>
