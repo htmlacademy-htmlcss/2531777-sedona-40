@@ -27,12 +27,12 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-user-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-user-item">
               <a class="navigation-link navigation-link-user-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="notification-badge">12</span>
@@ -65,25 +65,25 @@
               <div class="filter-hotels">
 
 
-                  <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-                  <form class="filters" action="https://echo.htmlacademy.ru/" metod="get">
-                    <fieldset class="catalog-filter-group">
-                      <legend class="catalog-filter-title">Инфраструктура</legend>
-                      <ul class="control-list">
-                        <li class="control-list-item">
-                          <label class="control-input-title">
-                            <input type="checkbox" class="control-input" name="swiming-pool" checked>Бассейн</label>
-                        </li>
-                        <li class="control-list-item">
-                          <label class="control-input-title">
-                            <input type="checkbox" class="control-input" name="parking" checked>Парковка</label>
-                        </li>
-                        <li class="control-list-item">
-                          <label class="control-input-title">
-                            <input type="checkbox" class="control-input" name="wifi">Wi-Fi</label>
-                        </li>
-                      </ul>
-                    </fieldset>
+                <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+                <form class="filters" action="https://echo.htmlacademy.ru/" metod="get">
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Инфраструктура</legend>
+                    <ul class="control-list">
+                      <li class="control-list-item">
+                        <label class="control-input-title">
+                          <input type="checkbox" class="control-input" name="swiming-pool" checked>Бассейн</label>
+                      </li>
+                      <li class="control-list-item">
+                        <label class="control-input-title">
+                          <input type="checkbox" class="control-input" name="parking" checked>Парковка</label>
+                      </li>
+                      <li class="control-list-item">
+                        <label class="control-input-title">
+                          <input type="checkbox" class="control-input" name="wifi">Wi-Fi</label>
+                      </li>
+                    </ul>
+                  </fieldset>
 
                   <fieldset class="radio-filter-group">
                     <legend class="title-radio">Тип жилья:</legend>
@@ -106,17 +106,17 @@
                   <fieldset class="value">
                     <legend class="value-title">Стоимость,<span>₽</span></legend>
                     <div class="value-form">
-                    <label class="label-value-title"><input class="text" type="text" value="0"></label>
-                    <label class="label-value-title"><input class="text" type="text" value="9000"></label>
-                  </div>
+                      <label class="label-value-title"><input class="text" type="text" value="0"></label>
+                      <label class="label-value-title"><input class="text" type="text" value="9000"></label>
+                    </div>
                     <input class="inputbox" type="range" name="" id="">
                   </fieldset>
 
 
-                <div class="button-wrapper">
-                  <button class="button button-submit" type="submit">Применить</button>
-                  <button class="button button-reset" type="reset">Сбросить</button>
-                </div>
+                  <div class="button-wrapper">
+                    <button class="button button-submit" type="submit">Применить</button>
+                    <button class="button button-reset" type="reset">Сбросить</button>
+                  </div>
                 </form>
             </section>
           </div>
@@ -257,48 +257,49 @@
         </ul>
         </section>
 
-    <section class="subscribe-catalog" data-test="subscribe">
-      <h2 class="title-subscribe-catalog">Подпишитесь на рассылку</h2>
-      <p class="description-subscribe-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="form-label" for="subscribe-now"></label>
-        <input class="subscribe-form-text text-catalog" type="text" id="subscribe-now" name="subscribe-now" placeholder="Ваш e-mail"
-          required>
-          <div class="button-subscribe" >
-            <button class="button-index" type="submit">Подписаться</button>
-          </div>
-      </form>
-    </section>
-    </main>
+        <section class="subscribe-catalog" data-test="subscribe">
+          <h2 class="title-subscribe-catalog">Подпишитесь на рассылку</h2>
+          <p class="description-subscribe-catalog">Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label" for="subscribe-now"></label>
+            <input class="subscribe-form-text text-catalog" type="text" id="subscribe-now" name="subscribe-now"
+              placeholder="Ваш e-mail" required>
+            <div class="button-subscribe">
+              <button class="button-index" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </section>
+      </main>
 
-    <footer class="page-footer" data-test="footer">
-      <div class="page-footer-container">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-        <a href="#">
-          <img class="htmlacademy-link" src="https://htmlacademy.ru/" width="115" height="33"
-            alt="Логотип html academy">
-        </a>
-      </div>
-    </footer>
+      <footer class="page-footer" data-test="footer">
+        <div class="page-footer-container">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+          <a href="#">
+            <img class="htmlacademy-link" src="https://htmlacademy.ru/" width="115" height="33"
+              alt="Логотип html academy">
+          </a>
+        </div>
+      </footer>
     </div>
-  </div>
+    </div>
   </body>
 
 </html>
