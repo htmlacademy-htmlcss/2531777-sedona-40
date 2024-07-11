@@ -110,6 +110,7 @@ body {
 .navigation-user-item {
   min-width: 44px;
   min-height: 64px;
+  padding: 23Px 12px;
 }
 
 .navigation-link {
@@ -124,9 +125,15 @@ body {
 }
 
 .notification-badge {
+  font-family: "PT Sans", sans-serif;
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
   background-color: #7db54f;
   border-radius: 50%;
   color: #ffffff;
+  padding: 3px;
 }
 
 .header-button {
@@ -605,16 +612,6 @@ body {
   padding: 5px 0;
 }
 
-.htmlacademy-link {
-  background-image: url("../images/footer-social/logo-academy.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-  background-color: #ffffff;
-  padding: 8.5px 0;
-  margin: 0;
-}
-
 /* Каталог */
 
 .catalog-sedona {
@@ -661,6 +658,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .breadcrumbs-item {
