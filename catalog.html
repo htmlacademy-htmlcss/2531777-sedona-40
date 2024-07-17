@@ -85,16 +85,26 @@
                     <legend class="catalog-filter-title">Инфраструктура</legend>
                     <ul class="control-list">
                       <li class="control-list-item">
+
                         <label class="control-input-title">
-                          <input type="checkbox" class="control-input" name="swiming-pool" checked>Бассейн</label>
+                          <input type="checkbox" class="visually-hidden control-input" name="swiming-pool" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
+                    </label>
                       </li>
                       <li class="control-list-item">
                         <label class="control-input-title">
-                          <input type="checkbox" class="control-input" name="parking" checked>Парковка</label>
+                          <input type="checkbox" class="visually-hidden control-input" name="parking" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
+                          </label>
                       </li>
                       <li class="control-list-item">
                         <label class="control-input-title">
-                          <input type="checkbox" class="control-input" name="wifi">Wi-Fi</label>
+                          <input type="checkbox" class="visually-hidden control-input" name="wifi">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
+                        </label>
                       </li>
                     </ul>
                   </fieldset>
@@ -104,15 +114,24 @@
                     <ul class="radio-list">
                       <li class="radio-list-item">
                         <label class="radio-input-title">
-                          <input type="radio" name="housing-type" value="hotel" checked>Гостиница</label>
+                          <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
+                          </label>
                       </li>
                       <li class="radio-list-item">
                         <label class="radio-input-title">
-                          <input type="radio" name="housing-type" value="motel">Мотель</label>
+                          <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
+                          </label>
                       </li>
                       <li class="radio-list-item">
                         <label class="radio-input-title">
-                          <input type="radio" name="housing-type" value="apartments">Апартаменты</label>
+                          <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Апартаменты</span>
+                        </label>
                       </li>
                     </ul>
                   </fieldset>
@@ -120,8 +139,13 @@
                   <fieldset class="value">
                     <legend class="value-title">Стоимость,<span>₽</span></legend>
                     <div class="value-form">
-                      <label class="label-value-title">от<input class="text" type="text" value="0"></label>
-                      <label class="label-value-title">до<input class="text" type="text" value="9000"></label>
+
+                      <label class="label-value-title">от
+                        <input class="text" type="number" value="0" placeholder="от">
+                      </label>
+                      <label class="label-value-title">до
+                        <input class="text" type="number" value="9000" placeholder="до">
+                      </label>
                     </div>
                     <input class="inputbox" type="range" name="" id="">
                   </fieldset>
