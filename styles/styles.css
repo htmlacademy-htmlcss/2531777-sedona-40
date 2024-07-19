@@ -199,6 +199,7 @@ body {
 }
 
 /* Страница */
+
 /* Блок Герой */
 
 .main {
@@ -275,7 +276,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
   width: 175px;
 }
 
@@ -303,13 +304,11 @@ body {
 
 .underlining::after {
   content: "";
-  position: absolute;
+  display: block;
   width: 60px;
   height: 0;
-  display: block;
   border: 2px solid  rgba(0, 0, 0, 0.3);
-  left: 170px;
-  top: 188px;
+  margin: 30px auto;
 }
 
 .hero:first-child .underlining::after,
@@ -333,7 +332,6 @@ body {
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 62px;
   width: 175px;
 }
 
@@ -354,7 +352,7 @@ body {
   font-weight: 400;
   color: #250b0b;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -1016,6 +1014,43 @@ body {
   display: inline;
 }
 
+.breadcrumbs-item-home {
+  order: 1;
+}
+
+.breadcrumbs-item-catalo {
+order: 2;
+}
+
+
+/* Где ошибка?
+.breadcrumbs-item-home {
+  position: relative;
+}
+
+.breadcrumbs-item-home::after{
+  position: absolute;
+  background-image: url("../images/icons/home.svg");
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-arrow {
+  position: relative;
+}
+
+.breadcrumbs-arrow::before {
+  position: absolute;
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 11px;
+  margin: 5px 10px;
+}
+ */
+
+
+
 /* Фильтры */
 
 .catalog-hotels {
@@ -1313,6 +1348,8 @@ body {
   width: 292px;
   height: 49px;
   margin-right: 70px;
+  padding: 11px 20px;
+  display: block;
 }
 
 .select-control:hover {
@@ -1377,10 +1414,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
-  gap: 20px;
+  gap: 19px;
   margin: 0;
   margin-bottom: 80px;
-  padding: 0 70px;
+  padding: 0 68px;
   justify-content: center;
   align-items: center;
 }
@@ -1398,11 +1435,6 @@ body {
 }
 
 .product-card-link {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
   text-decoration: none;
   grid-column: 1/-1;
 }
@@ -1415,6 +1447,11 @@ body {
 }
 
 .product-card-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
   margin: 0;
   padding-top: 16px;
 }
@@ -1600,7 +1637,7 @@ body {
 }
 
 .pagination-item {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   margin-right: 8px;
   justify-content: center;
@@ -1619,7 +1656,7 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   text-decoration: none;
-  padding: 11px 13px;
+  padding: 11px 10px;
 }
 
 .pagination-link:hover {
