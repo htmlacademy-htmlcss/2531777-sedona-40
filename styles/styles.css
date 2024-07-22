@@ -48,7 +48,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(242, 242, 242, 1);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,8 @@ body {
 .container-site {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .main-container {
@@ -110,8 +112,8 @@ body {
   content: "";
   position: absolute;
   width: 68px;
-  height: 0;
-  border: 2px solid #756257;
+  height: 2px;
+  background-color: #756257;
   left: 16px;
   right: 16px;
   top: 62px;
@@ -308,14 +310,15 @@ body {
   content: "";
   display: block;
   width: 60px;
-  height: 0;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
   margin: 30px auto;
 }
 
 .hero:first-child .underlining::after,
 .hero-item:last-child .underlining::after {
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -604,7 +607,7 @@ body {
   text-align: center;
   text-decoration: none;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
   padding: 0 362px;
 }
 
@@ -643,7 +646,7 @@ body {
 
 .subscribe-form {
   display: flex;
-  padding: 0 258px 104px 258px;
+  padding: 0 258px 105px 258px;
   margin: 0;
 }
 
@@ -656,7 +659,7 @@ body {
   text-align: left;
   width: 452px;
   height: 52px;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   border-color: transparent;
   padding: 14px 20px;
 }
@@ -674,7 +677,7 @@ body {
   text-align: center;
   background-color: #82b3d3;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   width: 232px;
   height: 52px;
   border-color: transparent;
@@ -708,12 +711,6 @@ body {
   cursor: pointer;
 }
 
-.button-subscribe {
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
 /* Футер */
 
 .page-footer {
@@ -723,14 +720,10 @@ body {
   color: #000000;
   background-color: #ffffff;
   display: flex;
-}
-
-.page-footer-container {
-  width: 1060px;
-  display: flex;
-  margin: 0 70px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  width: 1200px;
+  padding: 0 70px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .page-footer a {
@@ -741,48 +734,44 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-right: 41px;
+  margin-right: 42px;
   list-style-type: none;
-}
-
-
-.footer-social-item {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .footer-social-link {
   display: block;
-  width: 47px;
-  height: 40px;
+  width: 25px;
+  height: 18px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
-.footer-social-link:hover {
-  color: #68A2CA;
+.footer-social-list-item-vk {
+  margin: 13px 11px;
 }
 
-.footer-social-link:focus {
-  color: #68A2CA;
+.footer-social-list-item-tg {
+  margin: 15px 13px 7px 13px;
 }
 
-.footer-social-link:active {
-  color: rgba(104, 162, 202, 0.3);
-  ;
+.footer-social-list-item-youtube {
+  margin: 15px 9px;
 }
 
-.footer-social-vk {
-  background-image: url("../images/footer-social/vk.svg");
+.footer-social-link:hover path {
+  fill: #68A2CA;
 }
 
-.footer-social-tg {
-  background-image: url("../images/footer-social/telegram.svg");
+.footer-social-link:focus path {
+  fill: #68A2CA;
+  padding: 12px 14px;
 }
 
-.footer-social-youtube {
-  background-image: url("../images/footer-social/youtube.svg");
+.footer-social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
+  padding: 11px 12px;
 }
 
 .footer-contacts-phone {
@@ -812,7 +801,6 @@ body {
 }
 
 .logo-htmlacademy {
-  background-image: url("../images/footer-social/logo-academy.svg");
   display: block;
   width: 115px;
   height: 33px;
@@ -822,16 +810,16 @@ body {
   margin: 8px 0;
 }
 
-.logo-htmlacademy:hover {
-  color: #756157;
+.logo-htmlacademy:hover path {
+  fill: #756157;
 }
 
-.logo-htmlacademy:focus {
-  color: #756157;
+.logo-htmlacademy:focus path {
+  fill: #756157;
 }
 
-.logo-htmlacademy:active {
-  color: rgba(117, 97, 87, 0.3);
+.logo-htmlacademy:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Модальное окно */
@@ -926,7 +914,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 0;
 }
 
 .field {
@@ -967,16 +955,13 @@ body {
   height: 15px;
   background-image: url("../images/modal-window/calendar.svg");
   background-repeat: no-repeat;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.1);
   left: 539px;
   top: 5px;
   z-index: 2;
 }
 
-.check-in::after {
-  content: "Мы не можем отправить вас в прошлое.";
-  position: absolute;
-  display: block;
+.comment-check-in {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -985,16 +970,13 @@ body {
   width: 320px;
   height: 21px;
   text-transform: none;
-  left: 137px;
-  top: 38px;
+  margin-left: 157px;
+  margin-top: 4px;
+  margin-bottom: 23px;
   padding: 0 20px;
-  z-index: 2;
 }
 
-.departure::after {
-  content: "На эти даты есть свободные номера. Пока есть.";
-  position: absolute;
-  display: block;
+.comment-departure {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -1003,41 +985,74 @@ body {
   width: 371px;
   height: 21px;
   text-transform: none;
-  left: 137px;
-  top: 38px;
+  margin-left: 157px;
+  margin-top: 4px;
+  margin-bottom: 23px;
   padding: 0 20px;
-  z-index: 2;
+}
+
+.field-tooltip {
+  display: flex;
+  flex-direction: row;
 }
 
 .tooltip {
-  position: relative;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
 }
 
-.tooltip::before {
-  content: "";
-  position: absolute;
+.button-tooltip {
+  border: none;
+  background-color: #83b3d3;
+  padding: 7px 12px;
+  margin: 0;
   display: block;
-  background-image: url("../images/modal-window/children.svg");
-  width: 2px;
-  height: 12px;
-  left: 68px;
-  top: 10px;
-  background-color: #000000;
-  z-index: 2;
-}
-
-.tooltip::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-color: #82b3d3;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
-  padding: 4px 9px;
-  left: 59px;
-  top: 7px;
+  cursor: pointer;
+  margin-left: 62px;
+}
+
+.tooltip-text {
+  background-color: #242424;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-25%);
+  z-index: 1;
+  display: none;
+  margin-top: 6px;
+}
+
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 19px;
+  height: 19px;
+  rotate: 45deg;
+  background-color: #242424;
+  top: -7px;
+  transform: translate(-13%, 27%);
+  left: 50%;
+}
+
+.button-tooltip:hover + .tooltip-text,
+.button-tooltip:focus + .tooltip-text {
+  display: block;
 }
 
 .auth-form .field {
@@ -1129,8 +1144,8 @@ body {
   content: "";
   position: absolute;
   width: 93px;
-  height: 0;
-  border: 2px solid #756257;
+  height: 2px;
+  background-color: #756257;
   left: 16px;
   right: 16px;
   top: 62px;
@@ -1148,14 +1163,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 1200px;
-  padding: 70px;
-  padding-top: 35px;
+  padding: 35px 70px 68px 70px;
 }
 
 .inner-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .inner-header-title {
@@ -1227,36 +1241,20 @@ body {
   left: 23px;
 }
 
-
-
-
 /* Фильтры */
-
-.catalog-hotels {
-  display: flex;
-  width: 1060px;
-  justify-content: space-between;
-}
-
-.filter-hotels {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
 
 .filters {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-group {
   width: 150px;
   padding: 0;
   margin: 0;
-  margin-right: 70px;
+  margin-right: 68px;
   border: 0;
 }
 
@@ -1323,7 +1321,6 @@ body {
   background-image: url("..//images/hotels/tick.svg");
   background-repeat: no-repeat;
   top: 5px;
-  ;
   left: 4px;
   bottom: 4px;
   right: 4px;
@@ -1435,9 +1432,14 @@ body {
   display: flex;
 }
 
-.from,
+.from {
+  position: relative;
+  border-radius: 4px 0 0 4px;
+}
+
 .more {
   position: relative;
+  border-radius: 0 4px 4px 0;
 }
 
 .from::after {
@@ -1445,12 +1447,12 @@ body {
   display: block;
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 12px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .more::after {
@@ -1458,19 +1460,19 @@ body {
   display: block;
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 12px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1)
+  color: rgba(0, 0, 0, 0.3)
 }
 
 
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 48px;
+  margin-top: 41px;
   margin-bottom: 8px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
@@ -1512,7 +1514,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -3px;
 }
 
 .inputbox {
@@ -1541,6 +1543,7 @@ body {
   height: 36px;
   margin-bottom: 32px;
   padding: 0;
+  margin-top: 56px;
 }
 
 .button-submit:hover {
@@ -1592,6 +1595,8 @@ body {
   display: flex;
   width: 1200px;
   padding: 50px 70px 40px 70px;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog-title {
@@ -1692,7 +1697,7 @@ body {
   list-style-type: none;
   gap: 19px;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   padding: 0 68px;
   justify-content: center;
   align-items: center;
@@ -1729,7 +1734,7 @@ body {
   line-height: 28px;
   color: #000000;
   margin: 0;
-  padding-top: 16px;
+  padding-top: 11px;
 }
 
 .card-price {
@@ -1870,6 +1875,7 @@ body {
   background-image: url("../images/hotels/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
+  margin-top: 10px;
 }
 
 .five-stars {
@@ -1893,6 +1899,7 @@ body {
 }
 
 .rating {
+  display: flex;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1901,6 +1908,12 @@ body {
   color: #000000;
   text-transform: uppercase;
   justify-self: end;
+  background-color: #f2f2f2;
+  width: 140px;
+  align-self: center;
+  padding: 8px 22px;
+  border-radius: 4px;
+  height: 37px;
 }
 
 /* Пагинация */
