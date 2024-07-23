@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Смаглюк](https://up.htmlacademy.ru/htmlcss/40/user/2531777).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Антон Варнавский] (https://htmlacademy.ru/profile/anton_varnauski).
+* Сайт : [Мой проект Седона] (https://ekaterina-smag.github.io/2531777-sedona-40/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
