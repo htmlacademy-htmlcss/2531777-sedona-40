@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="outline.css">
     <link rel="icon" href="favicon.ico" sizes="32x32">
   </head>
 
@@ -51,7 +50,7 @@
       </header>
 
       <main class="main-inner main-container" data-test="main">
-        <div class="page-container catalog-sedona">
+        <div class="catalog-sedona">
           <section class="parameters" data-test=" filter">
             <header class="inner-header">
 
@@ -70,7 +69,7 @@
               </ol>
             </header>
 
-                <form class="filters" action="https://echo.htmlacademy.ru/" metod="get">
+                <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="control-list">
@@ -140,7 +139,7 @@
                       </label>
                     </div>
                     <div class="range-scale">
-                      <div class="range-bar" style="width:226px">
+                      <div class="range-bar">
                         <button class="range-toggle toggle-min">
                           <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>
@@ -160,14 +159,14 @@
         <section class="catalog" data-test="catalog">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
           <div class="select">
-          <select class="select-control" area-lebel="Сортировка" disabled>
+          <select class="select-control" name="sorting" disabled>
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
           </div>
           <ul class="active-look-list">
             <li class="active-look-item">
-              <a href="#" class="card-grid-toggle card-grid-toggle-current" type="button">
+              <a href="#" class="card-grid-toggle card-grid-toggle-current">
                 <span class="visually-hidden">Вывод карточек</span>
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0V6H4V0Z" fill="black" />
@@ -180,7 +179,7 @@
               </a>
             </li>
             <li class="active-look-item">
-              <a href="#" class="card-grid-toggle" type="button">
+              <a href="#" class="card-grid-toggle">
                 <span class="visually-hidden">Вывод на весь экран</span>
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 12H0V14H16V12Z" fill="black" />
@@ -189,7 +188,7 @@
               </a>
             </li>
             <li class="active-look-item">
-              <a href="#" class="card-grid-toggle" type="button">
+              <a href="#" class="card-grid-toggle">
                 <span class="visually-hidden">Вывод списка</span>
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 0H0V2H2V0Z" fill="black" />
@@ -206,6 +205,8 @@
           </ul>
 
         </section>
+
+
         <div class="product">
           <article class="product-card">
             <a class="product-card-link" href="product.html">
@@ -294,19 +295,17 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        </section>
+        </div>
 
         <section class="subscribe-catalog" data-test="subscribe">
           <h2 class="title-subscribe-catalog">Подпишитесь на рассылку</h2>
           <p class="description-subscribe-catalog">Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form-label" for="subscribe-now"></label>
+            <label class="form-label  visually-hidden" for="subscribe-now">Ваш email</label>
             <input class="subscribe-form-text text-catalog" type="text" id="subscribe-now" name="subscribe-now"
               placeholder="Ваш e-mail" required>
-            <div class="button-subscribe">
               <button class="button-index" type="submit">Подписаться</button>
-            </div>
           </form>
         </section>
       </main>
@@ -360,7 +359,6 @@
 
     </footer>
 
-    </div>
     </div>
   </body>
 
