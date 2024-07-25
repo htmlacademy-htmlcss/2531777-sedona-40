@@ -72,7 +72,7 @@ body {
   background-color: #ffffff;
   display: flex;
   width: 1200px;
-  height: 64px;
+  min-height: 64px;
   margin: 0 auto;
   padding: 0 70px;
 }
@@ -85,6 +85,7 @@ body {
 
 .navigation-logo {
   width: 140px;
+  height: 64px;
   margin-right: 28px;
 }
 
@@ -99,8 +100,10 @@ body {
 }
 
 .navigation-item {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 20px 16px;
+
 }
 
 .navigation-current {
@@ -120,30 +123,23 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   width: 130px;
-  margin-left: 182px;
-  margin-right: 20px;
+  margin-left: 179px;
+  margin-right: 23px;
   justify-content: flex-end
 }
 
 .navigation-user-item {
-  min-width: 44px;
-  min-height: 64px;
-  padding: 23Px 12px;
-}
-
-.navigation-icon {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
+  width: 44px;
 }
 
 .navigation-link {
   position: relative;
+  display: block;
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 20px;
@@ -166,6 +162,12 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.navigation-icon {
+  position: relative;
+  margin: 0 auto;
+  fill: #000000;
+}
+
 .notification-badge {
   font-family: "PT Sans", sans-serif;
   line-height: 10px;
@@ -177,11 +179,12 @@ body {
   color: #ffffff;
   padding: 5px 5px 5px 4px;
   position: absolute;
-  left: 8px;
-  top: -11px;
+  left: 24px;
+  top: 10px;
 }
 
 .header-button {
+  display: flex;
   font-family: "PT Sans", sans-serif;
   line-height: 20px;
   font-size: 16px;
@@ -194,9 +197,8 @@ body {
   width: 160px;
   border-radius: 4px;
   box-sizing: border-box;
-  margin: 14px 0;
-  justify-content: flex-start;
-  padding-top: 8px;
+  align-self: center;
+  padding: 8px 34px;
 }
 
 .header-button:hover {
@@ -272,8 +274,8 @@ body {
 /* Список */
 
 .hero-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -295,8 +297,6 @@ body {
 }
 
 .city {
-  grid-column: 1/-1;
-  grid-row: 1/2;
   font-family: "PT Sans", sans-serif;
   line-height: 28px;
   font-size: 24px;
@@ -383,25 +383,17 @@ body {
 
 .square {
   background-color: #f0f6fa;
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 
 .road {
   background-color: #e6f0f6;
-  grid-column: 2/3;
-  grid-row: 2/3;
 }
 
 .tourists {
   background-color: #f0f6fa;
-  grid-column: 3/4;
-  grid-row: 2/3;
 }
 
 .bridge {
-  grid-column: 1/-1;
-  grid-row: 3/4;
   background-color: #82b3d3;
   width: 1200px;
   display: flex;
@@ -561,13 +553,13 @@ body {
   text-align: center;
   background-color: #756157;
   text-decoration: none;
-  padding: 0;
+  padding: 7px 46px;
   border-radius: 4px;
+  box-sizing: border-box;
   width: 376px;
   margin: 0 412px;
-  margin-bottom: 96px;
+  margin-bottom: 95px;
   border-color: transparent;
-  height: 52px;
   cursor: pointer;
 }
 
@@ -589,7 +581,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #ffffff;
+  background-color: #5a7c92;
   padding: 0;
   margin: 0;
 }
@@ -670,7 +662,7 @@ body {
   width: 452px;
   border-radius: 4px 0 0 4px;
   border-color: transparent;
-  padding: 6px 20px;
+  padding: 5px 20px;
 }
 
 .text-catalog {
@@ -687,7 +679,7 @@ body {
   background-color: #82b3d3;
   text-transform: uppercase;
   border-radius: 0 4px 4px 0;
-  padding: 6px 50px;
+  padding: 4px 50px;
   width: 232px;
   border-color: transparent;
   box-sizing: border-box;
@@ -746,27 +738,26 @@ body {
   margin: 0;
   margin-right: 42px;
   list-style-type: none;
+  align-items: center;
 }
 
 .footer-social-link {
   display: block;
-  width: 25px;
-  height: 18px;
+  width: 38px;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer-social-list-item-vk {
-  margin: 13px 11px;
+  margin: 0 0 0 11px;
 }
 
 .footer-social-list-item-tg {
-  margin: 15px 13px 7px 13px;
+  margin: 0 0 0 13px;
 }
 
 .footer-social-list-item-youtube {
-  margin: 15px 9px;
+  margin: 0 0 -4px 7px;
 }
 
 .footer-social-link:hover path {
@@ -1009,7 +1000,6 @@ body {
   margin-left: 157px;
   margin-top: 4px;
   margin-bottom: 23px;
-  padding: 0 20px;
 }
 
 .comment-departure {
@@ -1024,7 +1014,6 @@ body {
   margin-left: 157px;
   margin-top: 4px;
   margin-bottom: 23px;
-  padding: 0 20px;
 }
 
 .check-in:hover,
@@ -1225,6 +1214,7 @@ body {
 .parameters {
   background-image: url("../images/background/filter-background.jpg");
   background-size: cover;
+  background-color: #5a7c92;
   color: #000000;
   background-position: center;
   background-repeat: no-repeat;
@@ -1492,6 +1482,10 @@ body {
 .text::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.text[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .value {
